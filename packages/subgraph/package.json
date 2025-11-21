@@ -1,0 +1,17 @@
+{
+  "name": "@celo-wallet/subgraph",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --studio zero-to-dapp",
+    "create-local": "graph create --node http://localhost:8020/ angel-token-transfers",
+    "remove-local": "graph remove --node http://localhost:8020/ angel-token-transfers",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 angel-token-transfers"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.67.0",
+    "@graphprotocol/graph-ts": "^0.32.0"
+  }
+}

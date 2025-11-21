@@ -1,0 +1,23 @@
+{
+  "name": "celo-wallet-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "setup": "./scripts/setup.sh",
+    "dev": "npm run dev --workspace=packages/frontend",
+    "build": "npm run build --workspaces",
+    "frontend:dev": "npm run dev --workspace=packages/frontend",
+    "frontend:build": "npm run build --workspace=packages/frontend",
+    "frontend:start": "npm run start --workspace=packages/frontend",
+    "frontend:lint": "npm run lint --workspace=packages/frontend",
+    "subgraph:codegen": "npm run codegen --workspace=packages/subgraph",
+    "subgraph:build": "npm run build --workspace=packages/subgraph",
+    "subgraph:deploy": "npm run deploy --workspace=packages/subgraph"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
