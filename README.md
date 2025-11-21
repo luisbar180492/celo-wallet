@@ -2,6 +2,9 @@
 
 A modern wallet application for Celo Mainnet with AngelToken (ERC20) transfer capabilities and The Graph integration for transaction history.
 
+## Demo
+![Demo](./video.mov)
+
 ## Features
 
 - 🔐 **Wallet Connection**: Connect using RainbowKit with multiple wallet support
